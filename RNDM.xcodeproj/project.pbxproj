@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3125CB2D22670BCC001692A5 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3125CB2C22670BCC001692A5 /* AddThoughtVC.swift */; };
 		31CCA0CD224236E100B29E5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CCA0CC224236E100B29E5A /* AppDelegate.swift */; };
-		31CCA0CF224236E100B29E5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CCA0CE224236E100B29E5A /* ViewController.swift */; };
+		31CCA0CF224236E100B29E5A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CCA0CE224236E100B29E5A /* MainVC.swift */; };
 		31CCA0D2224236E100B29E5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31CCA0D0224236E100B29E5A /* Main.storyboard */; };
 		31CCA0D5224236E100B29E5A /* RNDM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31CCA0D3224236E100B29E5A /* RNDM.xcdatamodeld */; };
 		31CCA0D7224236E200B29E5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31CCA0D6224236E200B29E5A /* Assets.xcassets */; };
@@ -31,9 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3125CB2C22670BCC001692A5 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
 		31CCA0C9224236E100B29E5A /* RNDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CCA0CC224236E100B29E5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		31CCA0CE224236E100B29E5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31CCA0CE224236E100B29E5A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		31CCA0D1224236E100B29E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31CCA0D4224236E100B29E5A /* RNDM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RNDM.xcdatamodel; sourceTree = "<group>"; };
 		31CCA0D6224236E200B29E5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +73,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3125CB2E226711A4001692A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3125CB30226711ED001692A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				31CCA0CE224236E100B29E5A /* MainVC.swift */,
+				3125CB2C22670BCC001692A5 /* AddThoughtVC.swift */,
+				31CCA0D0224236E100B29E5A /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3125CB31226711F7001692A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		31CCA0C0224236E000B29E5A = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +120,10 @@
 		31CCA0CB224236E100B29E5A /* RNDM */ = {
 			isa = PBXGroup;
 			children = (
+				3125CB30226711ED001692A5 /* Controller */,
+				3125CB31226711F7001692A5 /* View */,
+				3125CB2E226711A4001692A5 /* Model */,
 				31CCA0CC224236E100B29E5A /* AppDelegate.swift */,
-				31CCA0CE224236E100B29E5A /* ViewController.swift */,
-				31CCA0D0224236E100B29E5A /* Main.storyboard */,
 				31CCA0D6224236E200B29E5A /* Assets.xcassets */,
 				31CCA0D8224236E200B29E5A /* LaunchScreen.storyboard */,
 				31CCA0DB224236E200B29E5A /* Info.plist */,
@@ -146,6 +173,7 @@
 				31CCA0C5224236E000B29E5A /* Sources */,
 				31CCA0C6224236E000B29E5A /* Frameworks */,
 				31CCA0C7224236E000B29E5A /* Resources */,
+				96A39E5A474C32E808577589 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,9 +215,11 @@
 				TargetAttributes = {
 					31CCA0C8224236E000B29E5A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					31CCA0DF224236E200B29E5A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 31CCA0C8224236E000B29E5A;
 					};
 				};
@@ -272,6 +302,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		96A39E5A474C32E808577589 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RNDM/Pods-RNDM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNDM/Pods-RNDM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -279,8 +339,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31CCA0CF224236E100B29E5A /* ViewController.swift in Sources */,
+				31CCA0CF224236E100B29E5A /* MainVC.swift in Sources */,
 				31CCA0D5224236E100B29E5A /* RNDM.xcdatamodeld in Sources */,
+				3125CB2D22670BCC001692A5 /* AddThoughtVC.swift in Sources */,
 				31CCA0CD224236E100B29E5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = TestCorps.RNDM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -472,7 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = TestCorps.RNDM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -493,7 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = TestCorps.RNDMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNDM.app/RNDM";
 			};
@@ -515,7 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = TestCorps.RNDMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNDM.app/RNDM";
 			};
