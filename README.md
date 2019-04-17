@@ -1,5 +1,4 @@
 # RNDM
-
-A firebase based ios-App
+Using googles Firebase and Cloud Firestore
 
 
