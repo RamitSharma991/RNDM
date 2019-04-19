@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3103B1042269E04B002420E9 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3103B1032269E04B002420E9 /* Comments.swift */; };
 		3125CB2D22670BCC001692A5 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3125CB2C22670BCC001692A5 /* AddThoughtVC.swift */; };
 		31CCA0CD224236E100B29E5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CCA0CC224236E100B29E5A /* AppDelegate.swift */; };
 		31CCA0CF224236E100B29E5A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CCA0CE224236E100B29E5A /* MainVC.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3103B1032269E04B002420E9 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		3125CB2C22670BCC001692A5 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
 		31CCA0C9224236E100B29E5A /* RNDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CCA0CC224236E100B29E5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3103B1022269E031002420E9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3103B1032269E04B002420E9 /* Comments.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		3125CB2E226711A4001692A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +130,7 @@
 		31CCA0CB224236E100B29E5A /* RNDM */ = {
 			isa = PBXGroup;
 			children = (
+				3103B1022269E031002420E9 /* Utilities */,
 				3125CB30226711ED001692A5 /* Controller */,
 				3125CB31226711F7001692A5 /* View */,
 				3125CB2E226711A4001692A5 /* Model */,
@@ -340,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31CCA0CF224236E100B29E5A /* MainVC.swift in Sources */,
+				3103B1042269E04B002420E9 /* Comments.swift in Sources */,
 				31CCA0D5224236E100B29E5A /* RNDM.xcdatamodeld in Sources */,
 				3125CB2D22670BCC001692A5 /* AddThoughtVC.swift in Sources */,
 				31CCA0CD224236E100B29E5A /* AppDelegate.swift in Sources */,
