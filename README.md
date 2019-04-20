@@ -10,4 +10,5 @@ An ios App Using Google Firebase and Cloud Firestore
 Things i worked on:
 - Firestore
 - TableViews and Dynamic Cells
-- UITextViewDelegate , UISegmentedControl , UINavigationController, Date, Private Sets
+- Other services user
+UITextViewDelegate , UISegmentedControl , UINavigationController, Date, Private Sets
