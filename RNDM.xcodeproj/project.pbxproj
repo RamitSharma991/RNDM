@@ -18,6 +18,8 @@
 		31CCA0E5224236E200B29E5A /* RNDMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CCA0E4224236E200B29E5A /* RNDMTests.swift */; };
 		31CCA0F02242373900B29E5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31CCA0EF2242373900B29E5A /* GoogleService-Info.plist */; };
 		31CCA0F12242373900B29E5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31CCA0EF2242373900B29E5A /* GoogleService-Info.plist */; };
+		31CFF7AF226B081E00BC5FCE /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CFF7AE226B081E00BC5FCE /* Thought.swift */; };
+		31CFF7B1226B0B2F00BC5FCE /* ThoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CFF7B0226B0B2F00BC5FCE /* ThoughtCell.swift */; };
 		D0BE2B8DB44AD9C47A4674C6 /* Pods_RNDM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C49187CEC1063895B1668D8 /* Pods_RNDM.framework */; };
 		DF3254C5AC9FFC5F72263562 /* Pods_RNDMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DE746B5825F6826C344E9E /* Pods_RNDMTests.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,8 @@
 		31CCA0E4224236E200B29E5A /* RNDMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNDMTests.swift; sourceTree = "<group>"; };
 		31CCA0E6224236E200B29E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31CCA0EF2242373900B29E5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		31CFF7AE226B081E00BC5FCE /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
+		31CFF7B0226B0B2F00BC5FCE /* ThoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtCell.swift; sourceTree = "<group>"; };
 		3C49187CEC1063895B1668D8 /* Pods_RNDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0E6F81973989714F3649C8 /* Pods-RNDMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNDMTests/Pods-RNDMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A25616CBAA65CE56CD43BA5 /* Pods-RNDM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 		3125CB2E226711A4001692A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				31CFF7AE226B081E00BC5FCE /* Thought.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 		3125CB31226711F7001692A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				31CFF7B0226B0B2F00BC5FCE /* ThoughtCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,7 +359,9 @@
 				31CCA0CF224236E100B29E5A /* MainVC.swift in Sources */,
 				3103B1042269E04B002420E9 /* Comments.swift in Sources */,
 				31CCA0D5224236E100B29E5A /* RNDM.xcdatamodeld in Sources */,
+				31CFF7AF226B081E00BC5FCE /* Thought.swift in Sources */,
 				3125CB2D22670BCC001692A5 /* AddThoughtVC.swift in Sources */,
+				31CFF7B1226B0B2F00BC5FCE /* ThoughtCell.swift in Sources */,
 				31CCA0CD224236E100B29E5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
