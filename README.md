@@ -8,7 +8,7 @@
 An ios App Using Google Firebase and Cloud Firestore
 
 Things i worked on:
-- Firestore
+- Firestore : fetching data snapshots
 - TableViews and Dynamic Cells
 
 Other services used:
