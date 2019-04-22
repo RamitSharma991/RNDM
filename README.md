@@ -8,7 +8,7 @@
 An ios App Using Google Firebase and Cloud Firestore
 
 Things i worked on:
-- Firestore : fetching data snapshots, reloading dynamic data in tables
+- Firestore : fetching data snapshots, reloading dynamic data in tables, sorting tableview cells with respect to filters/categories.
 - TableViews and Dynamic Cells
 
 Other services used:
