@@ -12,4 +12,4 @@ Things i worked on:
 - TableViews and Dynamic Cells
 
 Other services used:
-- UITextViewDelegate , UISegmentedControl , UINavigationController, Date, Private Sets
+- UITextViewDelegate , UISegmentedControl , UINavigationController, Date, Private Sets, Auto-Layout
