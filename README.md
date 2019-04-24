@@ -12,7 +12,7 @@ Things i worked on:
 - Firebase Database with queries.
 - TableViews and Dynamic Cells
 - Firebase Auth
-- Firebase user Authetication,email-login
+- Firebase user Authetication with email-login
 
 Other services used:
 - UITextViewDelegate , UISegmentedControl , UINavigationController, Date, Private Sets, Auto-Layout
