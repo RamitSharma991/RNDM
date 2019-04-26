@@ -15,4 +15,4 @@ Things i worked on:
 - Firebase user Authetication with email-login via Auth singleton.
 
 Other services used:
-- UITextViewDelegate , UISegmentedControl , UINavigationController, Date, Private Sets, Auto-Layout
+- UITextViewDelegate, UISegmentedControl, UIStoryboardSegue, UINavigationController, Date, Private Sets, Auto-Layout
