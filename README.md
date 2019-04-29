@@ -11,7 +11,7 @@ Things i worked on:
 - Firebase Database with queries.
 - TableViews and Dynamic Cells.
 - Firebase user Authetication with email-login via Auth singleton.
-- Firebase Transactions
+- Firebase Transactions.
 
 Other services used:
 - UITextViewDelegate, UISegmentedControl, UIStoryboardSegue, UINavigationController, Date, Private Sets, Auto-Layout
