@@ -14,6 +14,4 @@ Things i worked on:
 - Firebase Transactions.
 
 Other services used:
-- UITextViewDelegate, UISegmentedControl, UIStoryboardSegue, UINavigationController, Date, Private Sets, Auto-Layout
-
-
+- UITextViewDelegate, UISegmentedControl, UIStoryboardSegue, UINavigationController, Date, Private Sets, Auto-Layout.
