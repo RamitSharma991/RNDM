@@ -11,7 +11,7 @@ Things i worked on:
 - Firebase Database with queries.
 - TableViews and Dynamic Cells.
 - Firebase user Authetication with email-login via Auth singleton.
-- Firebase Transactions and Snapshots
+- Firebase Transactions and Snapshots.
 - Database Security
 
 Other services used:
