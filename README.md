@@ -13,7 +13,7 @@ Things i worked on:
 - TableViews and Dynamic Cells.
 - Firebase user Authetication with email-login via Auth singleton.
 - Firebase Transactions and Snapshots.
-- Database Security
+- Database Security: Firebase security rules.
 
 Other services used:
 - UITextViewDelegate, UISegmentedControl, UIStoryboardSegue, UINavigationController, Date, Private Sets, Auto-Layout.
