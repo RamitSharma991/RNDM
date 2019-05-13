@@ -8,7 +8,7 @@
 An ios App Using Google Firebase and Cloud Firestore
 
 Things i worked on:
-- Firestore : fetching data snapshots, reloading dynamic data in tables, sorting tableview cells with respect to filters/categories & add and retrieve data from databse with observers and one time fetches, updating comments
+- Firestore : fetching data snapshots, reloading dynamic data in tables, sorting tableview cells with respect to filters/categories & add and retrieve data from databse with observers and one time fetches, updating comments online
 - Firebase Database with queries.
 - TableViews and Dynamic Cells.
 - Firebase user Authetication with email-login via Auth singleton.
