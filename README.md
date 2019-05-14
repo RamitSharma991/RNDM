@@ -15,6 +15,5 @@ Things i worked on:
 - Firebase Transactions and Snapshots.
 - Database Security: Firebase security, advanced security rules and features.
 
-
 Other services used:
 - UITextViewDelegate, UISegmentedControl, UIStoryboardSegue, UINavigationController, Date, Private Sets, Auto-Layout, UITapGestureRecognizer, UIAlerts, Forestore Collections, Document Refenrence
