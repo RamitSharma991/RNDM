@@ -13,7 +13,7 @@ Things i worked on:
 - TableViews and Dynamic Cells.
 - Firebase user Authetication with email-login via Auth singleton.
 - Firebase Transactions and Snapshots.
-- Database Security: Firebase security rules and features.
+- Database Security: Firebase security rules, advanced security and features.
 
 
 Other services used:
