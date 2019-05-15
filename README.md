@@ -14,7 +14,7 @@ Things i worked on:
 - Firebase user Authetication with email-login via Auth singleton.
 - Firebase Transactions and Snapshots.
 - Database Security: Firebase security,user security, advanced security rules, editing cloud database and features.
-- Social Logins:
+- Social Logins: Google Sign-n
 
 Other services used:
 - UITextViewDelegate, UISegmentedControl, UIStoryboardSegue, UINavigationController, Date, Private Sets, Auto-Layout, UITapGestureRecognizer, UIAlerts, Forestore Collections, Document Refenrence
