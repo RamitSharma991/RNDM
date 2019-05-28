@@ -16,5 +16,6 @@ Things i worked on:
 - Database Security: Firebase security,user security, advanced security rules, editing cloud database and features.
 - Social Logins: Google Sign-in
 
+
 Other services used:
 - UITextViewDelegate, UISegmentedControl, UIStoryboardSegue, UINavigationController, Date, Private Sets, Auto-Layout, UITapGestureRecognizer, UIAlerts, Forestore Collections, Document Refenrence
