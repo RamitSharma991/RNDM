@@ -12,7 +12,6 @@ import Firebase
 class AddThoughtVC: UIViewController, UITextViewDelegate {
     
     @IBOutlet private var categorySegment: UISegmentedControl!
-    @IBOutlet private var usernameTxt: UITextField!
     @IBOutlet private var thoughtTxt: UITextView!
     @IBOutlet private var postBtn: UIButton!
     
@@ -35,16 +34,15 @@ class AddThoughtVC: UIViewController, UITextViewDelegate {
         textView.textColor = UIColor.darkGray
     }
     
-    
     @IBAction func Post(_ sender: Any) {
         
-        guard let username = usernameTxt.text else { return }
         Firestore.firestore().collection(THOUGHTS_REF).addDocument(data: [CATEGORY : selectedCategory,
             NUM_COMMENTS : 0,
             NUM_LIKES : 0,
-            THOUGHT_TXT : thoughtTxt.text,
+            THOUGHT_TXT : thoughtTxt.text!,
             TIMESTAMP : FieldValue.serverTimestamp(),
-            USERNAME : username
+            USERNAME : Auth.auth().currentUser?.displayName ?? "",
+            USER_ID: Auth.auth().currentUser?.uid ?? ""
         ]) {
             (err) in
             if let err = err {

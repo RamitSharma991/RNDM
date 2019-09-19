@@ -1,0 +1,51 @@
+//
+//  Comment.swift
+//  RNDM
+//
+//  Created by Ramit sharma on 29/04/19.
+//  Copyright © 2019 Ramit sharma. All rights reserved.
+//
+
+import Foundation
+import Firebase
+
+
+class Comment{
+    
+    private(set) var username: String!
+    private(set) var timestamp: Date!
+    private(set) var commentText: String!
+    private(set) var documentId: String!
+    private(set) var userId: String!
+    
+    
+        init(username: String, timestamp: Date, commentTxt: String, documentId: String, userId: String) {
+            self.username = username
+            self.timestamp = timestamp
+            self.commentText = commentTxt
+            self.documentId = documentId
+            self.userId = userId
+
+        }
+    
+
+class func parseData(snapshot: QuerySnapshot?) -> [Comment] {
+    var comments = [Comment]()
+
+    guard let snap = snapshot else { return comments }
+    for document in snap.documents{
+        print(document.data())
+        let data = document.data()
+        let username = data[USERNAME] as? String ?? "Anonymous"
+        let timestamp = data[TIMESTAMP] as? Date ?? Date()
+        let commentText = data[COMMENT_TXT] as? String ?? ""
+        let documentId = document.documentID
+        let userId = data[USER_ID] as? String ?? ""
+
+        let newComment = Comment(username: username, timestamp: timestamp, commentTxt: commentText,documentId: documentId, userId: userId)
+        comments.append(newComment)
+    }
+    return comments
+
+    }
+}

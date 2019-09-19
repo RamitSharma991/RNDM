@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		3103B1042269E04B002420E9 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3103B1032269E04B002420E9 /* Comments.swift */; };
 		3125CB2D22670BCC001692A5 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3125CB2C22670BCC001692A5 /* AddThoughtVC.swift */; };
+		313A46512276F0B20030BCA5 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313A46502276F0B20030BCA5 /* Comment.swift */; };
+		313B731E2272C5620042AF17 /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313B731D2272C5620042AF17 /* CommentsVC.swift */; };
+		313B73202272CDAB0042AF17 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313B731F2272CDAB0042AF17 /* CommentCell.swift */; };
+		317E7F3522787AE400891D14 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317E7F3422787AE400891D14 /* KeyboardBoundView.swift */; };
+		317F2596226ECF6200388F33 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317F2595226ECF6200388F33 /* LoginVC.swift */; };
+		317F2598226ED3F500388F33 /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317F2597226ED3F500388F33 /* CreateUserVC.swift */; };
+		31C29787228992E1001B9E04 /* UpdateCommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C29786228992E1001B9E04 /* UpdateCommentsVC.swift */; };
 		31CCA0CD224236E100B29E5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CCA0CC224236E100B29E5A /* AppDelegate.swift */; };
 		31CCA0CF224236E100B29E5A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CCA0CE224236E100B29E5A /* MainVC.swift */; };
 		31CCA0D2224236E100B29E5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31CCA0D0224236E100B29E5A /* Main.storyboard */; };
@@ -37,6 +44,13 @@
 /* Begin PBXFileReference section */
 		3103B1032269E04B002420E9 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		3125CB2C22670BCC001692A5 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
+		313A46502276F0B20030BCA5 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		313B731D2272C5620042AF17 /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
+		313B731F2272CDAB0042AF17 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		317E7F3422787AE400891D14 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		317F2595226ECF6200388F33 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		317F2597226ED3F500388F33 /* CreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
+		31C29786228992E1001B9E04 /* UpdateCommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCommentsVC.swift; sourceTree = "<group>"; };
 		31CCA0C9224236E100B29E5A /* RNDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CCA0CC224236E100B29E5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31CCA0CE224236E100B29E5A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -83,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				3103B1032269E04B002420E9 /* Comments.swift */,
+				317E7F3422787AE400891D14 /* KeyboardBoundView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -91,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				31CFF7AE226B081E00BC5FCE /* Thought.swift */,
+				313A46502276F0B20030BCA5 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +117,8 @@
 				31CCA0CE224236E100B29E5A /* MainVC.swift */,
 				3125CB2C22670BCC001692A5 /* AddThoughtVC.swift */,
 				31CCA0D0224236E100B29E5A /* Main.storyboard */,
+				313B731D2272C5620042AF17 /* CommentsVC.swift */,
+				31C29786228992E1001B9E04 /* UpdateCommentsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -108,7 +126,10 @@
 		3125CB31226711F7001692A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				317F2595226ECF6200388F33 /* LoginVC.swift */,
 				31CFF7B0226B0B2F00BC5FCE /* ThoughtCell.swift */,
+				313B731F2272CDAB0042AF17 /* CommentCell.swift */,
+				317F2597226ED3F500388F33 /* CreateUserVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +348,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RNDM/Pods-RNDM-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
@@ -337,6 +359,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
@@ -358,9 +381,16 @@
 			files = (
 				31CCA0CF224236E100B29E5A /* MainVC.swift in Sources */,
 				3103B1042269E04B002420E9 /* Comments.swift in Sources */,
+				317F2596226ECF6200388F33 /* LoginVC.swift in Sources */,
+				313B73202272CDAB0042AF17 /* CommentCell.swift in Sources */,
+				317E7F3522787AE400891D14 /* KeyboardBoundView.swift in Sources */,
 				31CCA0D5224236E100B29E5A /* RNDM.xcdatamodeld in Sources */,
+				313B731E2272C5620042AF17 /* CommentsVC.swift in Sources */,
+				31C29787228992E1001B9E04 /* UpdateCommentsVC.swift in Sources */,
 				31CFF7AF226B081E00BC5FCE /* Thought.swift in Sources */,
+				313A46512276F0B20030BCA5 /* Comment.swift in Sources */,
 				3125CB2D22670BCC001692A5 /* AddThoughtVC.swift in Sources */,
+				317F2598226ED3F500388F33 /* CreateUserVC.swift in Sources */,
 				31CFF7B1226B0B2F00BC5FCE /* ThoughtCell.swift in Sources */,
 				31CCA0CD224236E100B29E5A /* AppDelegate.swift in Sources */,
 			);

@@ -8,6 +8,7 @@ target 'RNDM' do
   # Pods for RNDM
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
 
   target 'RNDMTests' do
     inherit! :search_paths
